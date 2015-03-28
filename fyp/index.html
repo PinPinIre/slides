@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>Project Title</title>
+		<title>Improve learning resource recommendations for students</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -56,10 +56,61 @@
 					<section>
 						<h3>Motivation</h3>
 						<p>
-							The internet has proved an invaluable tool in providing access to knowledge. However the volume of data is far too large to be finely catalogued by humans. For this we need to use machines to automate this task.
+							The internet has proved an invaluable tool in providing access to knowledge. However the volume of data is far too large to be finely catalogued by humans. For this we need to use machines to automate the task.
 						</p>
 						<p>
 							The overall aim of this is to try and choose a model to use when generating recomendations for students.
+						</p>
+					</section>
+				</section>
+				<section>
+					<h3>Outline</h3>
+					<ul>
+						<li>What is machine learning</li>
+						<li>What is currently being done in this field</li>
+						<li>What I hope to achieve with my FYP</li>
+						<li>Preliminary results</li>
+						<li>Questions</li>
+					</ul>
+				</section>
+				<section>
+					<section>
+						<h3>Machine Learning</h3>
+						<p>
+							Macine learning is an interdisciplinary field dedicated to the study of self learning systems. There are three types of machine learning.
+						</p>
+						<ul>
+							<li>Supervised Learning</li>
+							<li>Reinforced Learning</li>
+							<li>Unsupervised Learning</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Supervised Learning</h3>
+						<p>
+							The machine is fed inputs <em>x1, x2...xZ</em>,
+							desired outputs <em>y1, y2...yZ</em> and then tries to create a model which fits inputs to outputs.
+						</p>
+						<p>
+							A large number of training examples are required to properly train a supervised model. For this reason I choose not to use this approach.
+						</p>
+					</section>
+					<section>
+						<h3>Reinforced Learning</h3>
+						<p>
+							The machine interacts with the environment and produces actions <em>a1, a2...aZ</em> which affects the environment. The machine then receives rewards <em>r1, r2...rZ</em> and then tries to learn to produce actions which maximumises future rewards.
+						</p>
+						<p>
+							Like supervised learning this would require a large number of training samples to produce a working model and was not used in this project.
+						</p>
+					</section>
+					<section>
+						<h3>Unsupervised Learning</h3>
+						<p>
+							The machine is just fed inputs <em>x1, x2...xZ</em> and tries to build a model that finds patterns in the data. No desired outputs nor rewards are needed.
+						</p>
+						<p>
+							This type of machine learning is the focus of my project. Each of the algorihtms used builds a probalistic model of the data which it can then use for inference.
 						</p>
 					</section>
 				</section>
