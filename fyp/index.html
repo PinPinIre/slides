@@ -52,7 +52,7 @@
 						<p class="fragment">
                         Investigating the use of <b>machine learning algorithms</b> to generate <b>recommendations</b> from an <b>educational corpus</b>.<br />
                         Focusing mainly on:<br />
-                        <ul><li> LDA,</li><li> k-NN</li><li> Word2Vec.</li></ul>
+                        <ul class="fragment"><li> LDA,</li><li> k-NN</li><li> Word2Vec.</li></ul>
 						</p>
 						<p class="fragment">
                         <ul><li>Temporal Performance</li><li> The quality of recommendations</li></ul><br /> On a collection of 30,000 papers from arXiv.
@@ -223,10 +223,20 @@
 							Spotify's Annoy approximate-Nearest-Neighbor library was used for k-NN queries.
 						</p>
 					</section>
+					<!-- Mention that the time is using a log scale -->
 					<section>
-						<h3>k-NN Results</h3>
 						<p>
-							TODO: Create graph of results
+							<img data-src="imgs/knn_build_time.png" alt="KNN Build Time">
+						</p>
+					</section>
+					<section>
+						<p>
+							<img data-src="imgs/knn_train_time.png" alt="KNN Train Time">
+						</p>
+					</section>
+					<section>
+						<p>
+							<img data-src="imgs/knn_total_time.png" alt="KNN Total Time">
 						</p>
 					</section>
 				</section>
@@ -254,12 +264,6 @@
 						<p class="fragment">
 							<em>vector('Berlin') - vector('Germany') + vector('France) - > 'Paris'
 							</em>
-						</p>
-					</section>
-					<section>
-						<h3>Word2Vec Results</h3>
-						<p>
-							TODO: Create graph of results
 						</p>
 					</section>
 				</section>
