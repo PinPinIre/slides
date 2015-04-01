@@ -1,0 +1,11 @@
+.reveal section img {
+    background:none;
+    border:none;
+    box-shadow:none;
+}
+
+.logos {
+    text-align:center;
+    height: 20%;
+    width: 20%;
+}
