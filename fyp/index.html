@@ -43,6 +43,12 @@
 					<p>
 						<small>Created by <a href="http://CathalGeoghegan.me">Cathal Geoghegan</a> / <a href="http://twitter.com/_Kotl">@_Kotl</a></small>
 					</p>
+					<aside class="notes">
+        				Welcome everyone.
+						Introduce yourself.
+						Brief intro to why you choose this topic ~Fred -> recommendations
+						Passionate about education.
+    				</aside>
 				</section>
 				<section>
 					<section>
@@ -66,6 +72,13 @@
 						<p class="fragment">
 							On a collection of 30,000 papers from arXiv.
 						</p>
+						<aside class="notes">
+							<p>Used arXiv as a proxy to an educational corpus. Academic papers are an educational
+							source but have their own writing style compared to lecture notes, videos etc.</p>
+							<p>arXiv corpus contains a mixture of papers from physics, maths, computer science.
+							The vast majority however are related to physics.</p><p>Looking at the time to train the model</p>
+							<p>Quality of recommendations is subjective</p>
+	    				</aside>
 					</section>
 					<section>
 						<h3>Motivation</h3>
@@ -75,6 +88,13 @@
 						<p class="fragment">
 							The overall aim of this is to try and choose a model to use when generating recommendations for students.
 						</p>
+						<aside class="notes">
+							<p>We are currently seeing the rise of the MOOC.</p>
+							<p>Google is still the goto place to find information</p>
+							<p>Hyperlinks are still a very important bridge between topics</p>
+							<p>Use machine learning algorithms to bridge the gap between documents concerning
+								similar topics</p>
+						</aside>
 					</section>
 				</section>
 				<section>
@@ -98,34 +118,50 @@
 							<li class="fragment">Reinforced Learning</li>
 							<li class="fragment">Unsupervised Learning</li>
 						</ul>
+						<aside class="notes">
+							<p>ML touches upon numerous different areas; nlp, ir, vision, game theory, statistics,
+							 	ai, maths</p>
+						</aside>
 					</section>
 					<section>
 						<h3>Supervised Learning</h3>
 						<p class="fragment">
-							The machine is fed inputs <em>x1, x2...xZ</em><!-- consider a more obvious different font ? -->,
-							desired outputs <em>y1, y2...yZ</em> and then tries to create a model which fits inputs to outputs.
+							The machine is fed inputs <em class="model">x1, x2...xZ</em><!-- consider a more obvious different font ? -->,
+							desired outputs <em class="model">y1, y2...yZ</em> and then tries to create a model which fits inputs to outputs.
 						</p>
 						<p class="fragment">
 							A large number of training examples are required to properly train a supervised model. For this reason I choose not to use this approach.
 						</p>
+						<aside class="notes">
+							<p>Due to time constraints it wouldn't have been feasable to find an annotated data set or
+							to find a labelled one.</p>
+							<p>There are hundreds of different approaches using sl; neural networks, svm, regression, etc.</p>
+						</aside>
 					</section>
 					<section>
 						<h3>Reinforced Learning</h3>
 						<p class="fragment">
-							The machine interacts with the environment and produces actions <em>a1, a2...aZ</em> which affects the environment. The machine then receives rewards <em>r1, r2...rZ</em> and then tries to learn to produce actions which maximises future rewards.
+							The machine interacts with the environment and produces actions <em class="model">a1, a2...aZ</em> which affects the environment. The machine then receives rewards <em class="model">r1, r2...rZ</em> and then tries to learn to produce actions which maximises future rewards.
 						</p>
 						<p class="fragment">
 							Like supervised learning this would require a large number of training samples to produce a working model and was not used in this project.
                         </p><!-- more importantly, we didn't have a clear reward function and it wasn't a real-time problem -->
+						<aside class="notes">
+							<p>More importantly we didn't have a clear rewards function, real-time problem</p>
+						</aside>
 					</section>
 					<section>
 						<h3>Unsupervised Learning</h3>
 						<p class="fragment">
-							The machine is fed inputs <em>x1, x2...xZ</em> and tries to build a model that finds patterns in the data. No desired outputs nor rewards are needed.
+							The machine is fed inputs <em class="model">x1, x2...xZ</em> and tries to build a model that finds patterns in the data. No desired outputs nor rewards are needed.
 						</p>
 						<p class="fragment">
 							This type of machine learning is the focus of my project. Each of the algorithms used builds a probabilistic model of the data which it can then use for inference.
 						</p>
+						<aside class="notes">
+							<p>Unsupervised are largely probabilistic models. Tries to find hidden patterns in
+							the data.</p>
+						</aside>
 					</section>
 				</section>
 				<section>
